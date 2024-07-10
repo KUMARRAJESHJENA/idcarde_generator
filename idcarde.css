@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #8ad151;
+}
+
+.container {
+    width: 50%;
+    background-color: #d69494;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+#idCardForm label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+#idCardForm input[type="text"],
+#idCardForm input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#idCardForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#idCardForm button:hover {
+    background-color: #45a049;
+}
+
+#idCardPreview {
+    margin-top: 20px;
+}
+
+#idCard {
+    border: 1px solid #c15c5c;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#photoPreview img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+}
+
+button {
+    margin-top: 10px;
+} 
+
