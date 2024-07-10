@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Generator</title>
+    <link rel="stylesheet" href="idcarde.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ID Card Generator</h1>
+        <img src="https://www.designevo.com/res/templates/thumb_small/red-branch-and-court-badge.webp" alt="">
+        <form id="idCardForm">
+            <h1>ID Card Generator</h1>
+            <label for="fullName">Full Name:</label> 
+            <input type="text" id="fullName" required> 
+            <label for="jobTitle">Job Title:</label> <br>
+            <input type="text" id="jobTitle" required> <br>
+            <label for="organization">Organization:</label> <br>
+            <input type="text" id="organization" required> <br>
+            <label for="photo">Photo:</label> <br>
+            <input type="file" id="photo" accept="image/*" required> <br>
+            <button type="submit">Generate ID Card</button> <br>
+        </form>
+        <div id="idCardPreview" class="hidden">
+            <h2>Preview</h2>
+            <div id="idCard">
+                <div id="photoPreview"></div>
+                <div id="infoPreview"></div>
+            </div>
+            <button onclick="printIDCard()">Print</button>
+        </div>
+    </div>
+    <script src="idcarde.js"></script>
+</body>
+</html>
